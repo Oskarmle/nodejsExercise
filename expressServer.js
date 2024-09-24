@@ -1,5 +1,7 @@
 const express = require("express");
 var cors = require("cors");
+const messagesApi = require("./api/messagesApi.js");
+
 const app = express();
 const port = 3003;
 
@@ -7,7 +9,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-// Get request 
+app.use("/messages", messagesApi);
+
+// Get request
 app.get("/destinations", (req, res) => {
     console.log("params", req.params);
 
