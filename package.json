@@ -6,10 +6,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "type": "module",
+  "type": "commonjs",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
     "http": "^0.0.1-security",
     "mongodb": "^6.9.0"
   }
